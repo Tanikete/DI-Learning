@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    border: 2px solid red;
+    height: 30em;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.one, .three{
+    display: flex;
+    width: auto;
+    height: 10em;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.two{
+    display: flex;
+    height: 10em;
+    width: 15em;
+    background-color: aqua;
+    margin-left: auto;
+    
+}

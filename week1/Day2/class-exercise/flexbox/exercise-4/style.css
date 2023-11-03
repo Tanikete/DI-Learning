@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    border: 2px solid red;
+    height: 30em;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.one, .three{
+    display: flex;
+    width: auto;
+    height: 10em;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10em ;
+}
+.two{
+    display: flex;
+    height: 5em;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+}

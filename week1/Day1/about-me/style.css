@@ -1,0 +1,56 @@
+
+.Me{
+    background-image: linear-gradient(to right, #dcecf1, #954e97, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+section p{
+    background-image: linear-gradient(to right, #c001b3, #ce07ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+span{
+    background-image: linear-gradient(to left, #833ab4, #fd1d1d,#fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section ol{
+    list-style-type: upper-roman;
+    color: lightgreen;
+}
+section ul{
+    list-style-type:square;
+    color: #fcb045;
+}
+footer a{
+    user-select: none;
+    text-decoration: none;
+    color: rgb(182, 13, 216);
+}
+footer a:hover{
+    opacity: .5;
+    cursor: pointer;
+    text-decoration: underline;
+    color: aquamarine;
+}
+.blue, .white, .red{
+    display: inline-block;
+    height: 40px;
+    width: 15px;
+}
+.blue{
+    background-color: blue;
+  
+}
+.white{
+    background-color: #Fff;
+    
+}
+
+.red{
+    background-color: red;
+
+}

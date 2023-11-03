@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    border: 2px solid red;
+    height: 30em;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.one, .three{
+    display: flex;
+    width: auto;
+    height: 50px;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+.two{
+    display: flex;
+    height: 100px;
+    background-color: aqua;
+    margin-left: 5em;
+    margin-right: 5em;
+
+}
