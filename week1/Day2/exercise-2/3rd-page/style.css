@@ -74,9 +74,7 @@ select{
     
     
 }
-.three .above{
-    margin-top: ;
-}
+
 .four{
     margin: 1em;
     text-align: center;
@@ -123,6 +121,7 @@ select{
 .green{
     background-color: rgb(58, 191, 58);
     color: white;
+    border: 1px solid  rgb(58, 191, 58);
 }
 .three .blue{
     margin-top: 3em;
