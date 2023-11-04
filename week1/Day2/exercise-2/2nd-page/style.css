@@ -67,3 +67,14 @@ input{
 .five>label{
     margin-left: -5em;
 }
+.button{
+    text-align: center;
+}
+.button input{
+    background-color: rgb(25, 95, 156);
+    padding: 9px;
+    margin: 5px;
+    color: white;
+    border: 1px solid  rgb(25, 95, 156);
+    border-radius: 10px;
+}
