@@ -63,6 +63,7 @@ select{
     margin-top: -2.3em;
     background-color: blue;
     padding: .5em;
+    border-radius: 5px;
 }
 .three, .four, .five{
     margin-top: 5em;
