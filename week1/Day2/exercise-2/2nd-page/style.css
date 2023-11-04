@@ -29,3 +29,41 @@ main h2{
     color: rgb(139, 28, 28);
     margin: 2em;
 }
+form{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+.one, .two {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+label{
+    display: block;
+}
+input{
+    padding: 1em;
+    width: 18em;
+    margin: 5px;
+}
+.three, .four{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin: 5px;
+    margin-left: 6.5em;
+}
+.five{
+    margin-left: -34em;
+}
+.five>label{
+    margin-left: -5em;
+}
