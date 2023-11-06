@@ -15,15 +15,15 @@ console.log(5 % 10)
 // Actual: 5
 
 console.log("Java" + "Script")
-// Prediction: JavaScript. "x" + "y"
+// Prediction: JavaScript, "x" + "y"
 // Actual: JavaScript
 
 console.log( " " + " " )
-// Prediction:  , 2 blank spaces
+// Prediction: " " , appending a string to an int => JS does it by thinking it's a string
 // Actual:
 
 console.log(" " + 0)
-// Prediction:  0, blank space+0
+// Prediction:  "0", appending a string to an int => JS does it by thinking it's a string
 // Actual: 0
 
 console.log(true + true)
