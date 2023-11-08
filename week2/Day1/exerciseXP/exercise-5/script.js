@@ -36,7 +36,7 @@ console.log("1" + "3")
 
 console.log("1" - "3")
 // Prediction: NaN, cannot directly substract from string
-// Actual: NaN
+// Actual: -2
 
 console.log("johnny" + 5)
 // Prediction: johnny5, adding string "x" +  number "y"
