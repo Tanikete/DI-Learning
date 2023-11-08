@@ -6,6 +6,9 @@ console.log(people.indexOf("Mary"));
 let peopleSlice = people.slice(1, 3);
 console.log(peopleSlice);
 console.log(people.indexOf("Foo")); // -1 because it doesn't exist
+console.log(people)
+let peopleLength = people.length;
+console.log(peopleLength);
 let last = people[people.length - 1];
 console.log(last);
 //part 2
