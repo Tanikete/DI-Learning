@@ -1,19 +1,21 @@
 function playTheGame() {
-    let play = confirm("Do you want to play the game?");
+    let play = confirm("Do you want to play the game");
     if (play === false) {
         alert("No problem, Goodbye");
-    } else {
-        let num = prompt("Enter a number between 0 and 10");
-        if (isNaN(num)) {
-            alert("Sorry Not a number, Goodbye");
-        } else if (num < 0 || num > 10) {
-            alert("Sorry it’s not a good number, Goodbye");
-        } else {
-            let computerNum = Math.floor(Math.random() * 11);
-            test(num, computerNum);
-        }
+        return;
+    }
+    let num;
+    while (play === true) { 
+        num = parseInt(prompt("Enter a number between 0 and 10"));
+        if (num >=0 && num <=10) {
+
+
+        let computerNum = Math.floor(Math.random() * 11);
+        test(num, computerNum);
     }
 }
+}
+
 function test(num, computerNum) {
     let count = 0;
     for (let i = 0; i < 3; i++) {
