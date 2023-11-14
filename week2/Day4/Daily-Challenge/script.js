@@ -11,14 +11,16 @@ function createFrame(words) {
     // Initialize the frame string with the top border
     let frame = topBorder + '<br>';
 
-    // Add the words with side borders to the frame string
+    // Add the words with side borders and proper alignment to the frame string
     wordArray.forEach(word => {
         let spaces = ' '.repeat(maxLength - word.length);
-        frame += `* ${word}${spaces} *<br>`;
+        frame += `* ${spaces}${word} *<br>`;
     });
 
     // Add the bottom border to the frame string
     frame += topBorder;
+   
+
 
     // Return the frame string
     return frame;
