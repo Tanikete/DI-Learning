@@ -5,3 +5,4 @@ colors.forEach((currentColor, index) => {
     console.log(`${index + 1}${ordinal[index + 1] || ordinal[0]} choice is ${currentColor}`);
 }
 );
+
