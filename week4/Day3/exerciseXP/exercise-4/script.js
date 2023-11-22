@@ -8,5 +8,5 @@ const students = [{name: "Ray", course: "Computer Science", isPassed: true},
 let isPassed = students.filter((student) => { return student.isPassed === true});
 console.log(isPassed);
 
-let congratulations = isPassed.map((student) => { return `Good job ${student.name}you passed the course in ${student.course}`});
+let congratulations = isPassed.map((student) => { return `Good job ${student.name} you passed the course in ${student.course}`});
 console.log(congratulations); 
