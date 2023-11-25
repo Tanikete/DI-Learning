@@ -16,5 +16,8 @@ function isAnagram(str1, str2) {
   return sortedStr1 === sortedStr2;
 }
 
-const check = isAnagram('silent', 'listen');
-console.log(check);
+const inputStr1 = prompt('Enter the first string:');
+const inputStr2 = prompt('Enter the second string:');
+
+const check = isAnagram(inputStr1, inputStr2);
+alert(check);
