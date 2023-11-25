@@ -74,26 +74,50 @@ const robots = [
 
     const Search = document.getElementById("search");
     const container = document.getElementById("robots");
+//method#1
+    // const searchRobot = () => {
+    //     container.innerHTML = "";
+    //     const search = Search.value;
+    //     robots.forEach(robot => {
+    //         if (robot.name.toLowerCase().includes(search.toLowerCase())) {
+    //             const card = document.createElement("div");
+    //             card.classList.add("card");
+    //             card.innerHTML = `
+    //                 <img src="${robot.image}" alt="robot">
+    //                 <h3>${robot.name}</h3>
+    //                 <p>${robot.email}</p>
+    //             `;
+    //             container.appendChild(card);
+    //         }
+    //     });
+    // }
 
-    const searchRobot = () => {
-        container.innerHTML = "";
-        const search = Search.value;
-        robots.forEach(robot => {
-            if (robot.name.toLowerCase().includes(search.toLowerCase())) {
-                const card = document.createElement("div");
-                card.classList.add("card");
-                card.innerHTML = `
-                    <img src="${robot.image}" alt="robot">
-                    <h3>${robot.name}</h3>
-                    <p>${robot.email}</p>
-                `;
-                container.appendChild(card);
-            }
-        });
-    }
+    // Search.addEventListener("keyup", searchRobot);
+    // searchRobot()
 
-    Search.addEventListener("keyup", searchRobot);
-    searchRobot()
+    //method#2
+// container.innerHTML = robots.map(robot => {
+//     return `
+//         <div class="card">
+//             <img src="${robot.image}" alt="robot">
+//             <h3>${robot.name}</h3>
+//             <p>${robot.email}</p>
+//         </div>
+//     `;
+// }).join("");
+// Search.addEventListener("keyup", () => {
+//     const search = Search.value;
+//     container.innerHTML = robots.filter(robot => robot.name.toLowerCase().includes(search.toLowerCase())).map(robot => {
+//         return `
+//             <div class="card">
+//                 <img src="${robot.image}" alt="robot">
+//                 <h3>${robot.name}</h3>
+//                 <p>${robot.email}</p>
+//             </div>
+//         `;
+//     }).join("");
+// });
+
 
 
 
