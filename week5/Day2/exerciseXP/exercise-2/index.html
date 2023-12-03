@@ -15,16 +15,18 @@
     </style>
     <script>
         window.onload = function () {
-            const apiUrl = "https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My";
+            let searchtext = "sun";
+            let apiKey = "hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My";
+            let apiUrl = `https://api.giphy.com/v1/gifs/search?q=${searchtext}&rating=g&api_key=${apiKey}&limit=10`;
+            
+            let ajax = new XMLHttpRequest();
+            ajax.open('GET', apiUrl);
+            ajax.send();
 
-            const xhr = new XMLHttpRequest();
-            xhr.open("GET", apiUrl);
-            xhr.send();
-
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    const response = JSON.parse(xhr.responseText);
-                    const picturesContainer = document.getElementById('pictures-container');
+            ajax.onload = function () {
+                if (ajax.status === 200) {
+                    let response = JSON.parse(ajax.responseText);
+                    let picturesContainer = document.getElementById('pictures-container');
 
                     // Clear previous content
                     picturesContainer.innerHTML = "";
@@ -32,7 +34,7 @@
                     if (response.data && response.data.length > 0) {
                         response.data.forEach(function (gif) {
                             // Create an image element for each GIF
-                            const img = document.createElement('img');
+                            let img = document.createElement('img');
                             img.src = gif.images.fixed_height.url;
                             picturesContainer.appendChild(img);
                         });
@@ -40,12 +42,8 @@
                         console.log("No GIFs found");
                     }
                 } else {
-                    console.error(`Error ${xhr.status}: ${xhr.statusText}`);
+                    console.error(`Error ${ajax.status}: ${ajax.statusText}`);
                 }
-            };
-
-            xhr.onerror = function () {
-                console.error("Network error occurred");
             };
         }
     </script>
