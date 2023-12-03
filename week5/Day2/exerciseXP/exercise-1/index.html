@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            let searchtext = "sun"
+            let ajax = new XMLHttpRequest();
+            ajax.open('GET', 'https://api.giphy.com/v1/gifs/search?q=' + searchtext +'&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My')
+            ajax.send();
+            ajax.onload =  function (){
+                let objects = JSON.parse(ajax.responseText)
+                let picture
+            }
+            }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
