@@ -1,9 +1,9 @@
--- SELECT * FROM customer
+-- SELECT * FROM customer 
 
 -- SELECT first_name || ' ' || last_name AS full_name
 -- FROM customer;
 
--- SELECT DISTINCT create_date FROM CUSTOMER;
+-- SELECT DISTINCT create_date FROM customer;
 
 -- SELECT * FROM customer ORDER BY first_name DESC
 
