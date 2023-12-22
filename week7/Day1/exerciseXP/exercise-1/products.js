@@ -1,8 +1,10 @@
-const products = [
-    {name:"laptop", price: 1000, category: "tech"},
-    {name:"dress", price: 50, category: "clothes"},
-    {name:"toy", price: 20, category: "toys"},
-    {name:"banana", price: 0.5, category: "food"}
-];
 
-module.exports = products;
+const products = [
+    { name: 'Product1', price: 19.99, category: 'Electronics' },
+    { name: 'Product2', price: 29.99, category: 'Clothing' },
+    { name: 'Product3', price: 9.99, category: 'Home & Kitchen' },
+  
+  ];
+  
+  module.exports = products;
+  
